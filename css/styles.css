@@ -60,8 +60,10 @@ body {
 .contact-block {
     display: flex;
     flex-direction: column;
+    font-style: normal;
+    }
   }
-}
+
 
 @media only screen and (min-width: 1158px) {
     .contact-list {
@@ -167,13 +169,14 @@ body {
 
 .contact-list-link {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-bottom: 12px;
         }
+        
 .contact-list-link:hover,
 .contact-list-link:focus
 {
@@ -181,9 +184,6 @@ body {
 }
 }
 /* ======/Page header styles===== */
-
-
-
 
 /* ========= Mobile-menu styles======= */
 @media only screen and (max-width: 767px)
@@ -374,32 +374,66 @@ body {
 {
 background-color: #404BBF;
 }
- для табл бєкграунд
- /* @media only screen and (min-width: 768px) {
+
+
+@media only screen and (min-width: 768px) {
+    .hero-section-paddigs {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        
+    }
     .hero {
-        max-width: __px;
+        max-width: 768px;
         background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-    url(..images/people-office-tabl.jpg);
+    url(../images/people-office-tabl.jpg);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
    }
-} */
-/* @media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
+
+   .hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+       
+}
+.order-service-btn {
+    
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+   
+}
+}
+
+@media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
     .hero { 
         background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
     url(../images/people-office-tabl@2x.jpg);
    }
-} */
-для дeсктопа
-/* .hero { 
-    max-width: __px;
-    background-image: linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-url(../images/people-office.jpg);
+} 
+@media only screen and (min-width: 1158px) {
+    .hero-section-paddigs {
+        padding-top: 188px;
+        padding-bottom: 188px;
+       
+    }
+    .hero {
+            background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/people-office.jpg);
+            max-width: 1440px;
+        }
+    .hero-title {
+                max-width: 496px;
+                margin-bottom: 48px;
+                font-size: 36px;
+                line-height: 1.07;
+     }   
 }
+
 @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
     .hero { 
         background-image: linear-gradient(
@@ -407,11 +441,8 @@ url(../images/people-office.jpg);
         rgba(46, 47, 66, 0.7)),
     url(../images/people-office-dt@2x.jpg);
    }
-} */
-
-
-
-
+}
+ 
 /* ======/Hero section styles===== */
 
 /* =======Functionality Section======= */
@@ -444,6 +475,7 @@ url(../images/people-office.jpg);
     text-align: center;
    }
    .functional-list-text {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -458,6 +490,60 @@ url(../images/people-office.jpg);
 .functional-list-item {
         width: 288px;
     }
+
+    @media only screen and (min-width: 768px) {
+        .functional-section-paddigs {
+            padding-top: 96px;
+        }
+        .functional-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 72px;
+            column-gap: 24px;
+              }
+        .functional-list-item {
+                width: 356px;
+            }
+        .functional-list-title {
+            text-transform: capitalize;
+            text-align: left;
+                       }  
+             
+    }
+    @media only screen and (min-width: 1158px) {
+        .functional-section-paddigs {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        .functional-list {
+            gap: 24px;
+              }
+        .functional-list-item {
+            width: 264px;
+            }
+        .functional-list-title {
+            font-size: 20px;
+            line-height: 1.2;
+            }
+        .functional-list-text {
+            font-weight: 400;
+            
+    }
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 264px;
+            height: 112px;
+            background: #f4f4fd;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            border: 1px solid #8e8f99;
+
+    }
+}
 /* =======/Functionality Section======= */
 
 /*-- =======Team Section======= */
@@ -492,7 +578,6 @@ url(../images/people-office.jpg);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 
 }     
-
 .team-list-item {
     box-shadow: 
     0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -543,6 +628,28 @@ background-color: #404bbf;
 .social-icon-team {
     fill: #f4f4fd;  
 }    
+
+@media only screen and (min-width: 768px) {
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 64px;
+    } 
+}
+
+@media only screen and (min-width: 1158px) {
+    .team-section-paddings {
+        padding-top: 120px;
+        padding-bottom: 120px;
+            }
+    .team-list {
+        justify-content: space-between;
+        align-items: center;
+            } 
+            
+}
 /*-- =======/Team Section======= */
 
 /* =======Portfolio Section======= */
