@@ -409,10 +409,10 @@ color: #f4f4fd;
  .color-white {
     color: #f4f4fd;
 }
-/* .footer-link {
+.footer-link {
     display: inline-block;
     margin-bottom: 16px;
-}  */
+} 
 
 .page-footer-text {
         max-width: 264px;
@@ -468,10 +468,10 @@ color: #f4f4fd;
 
 .social-icon-footer {
     fill: #f4f4fd;
-} *
+} 
 
 
-/* .subscribe {
+.subscribe {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -493,7 +493,7 @@ color: #f4f4fd;
     align-items: end;
     margin-left: 80px;
     gap: 24px;
-} */
+} 
 .form-lable {
     display: flex;
     flex-direction: column;
