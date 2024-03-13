@@ -545,7 +545,7 @@ color: #f4f4fd;
 
 /* =======Modal window styles======= */
 
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -560,7 +560,7 @@ color: #f4f4fd;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-}
+} */
 .modal {
     position: absolute;
     top: 50%;
