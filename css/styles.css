@@ -1093,11 +1093,10 @@ background-color: #404bbf;
     width: 408px;
     min-height: 584px;
       }
-
-
     }
+    
 @media only screen and (min-width: 1158px) {
-.modal {
+    .modal {
     width: 408px;
     min-height: 584px;
 }
@@ -1144,6 +1143,7 @@ color: #8e8f99;
 .review-form-input {
     width: 256px;
     height: 40px;
+    padding-left: 34px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
@@ -1275,7 +1275,23 @@ color: #8e8f99;
         background-color: #404bbf;
         
     }
-@media only screen and (min-width: 768px) 
-@media only screen and (min-width: 1158px) 
+@media only screen and (min-width: 768px) {
+    .review-form-description {
+        width: 360px;
+    }
+    .review-form-input {
+        width: 360px;
+        height: 40px;
+    }
+    .review-form-btn {
+        
+        margin-left: 119px;
+        margin-right: 120px;
+    }
+}
+@media only screen and (min-width: 1158px){ 
 
-
+.review-form-input {
+       padding-left: 38px;
+   }
+}
